@@ -1,0 +1,25 @@
+name: Verify capstone
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install app dependencies
+        run: npm install --no-audit --no-fund
+      - name: Check required files
+        run: npm run check
+      - name: Run logic tests
+        run: npm test
+      - name: Produce frontend build
+        run: npm run build
