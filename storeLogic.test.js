@@ -3,8 +3,8 @@ import assert from 'node:assert/strict';
 import {
   stockFor, cartLines, subtotalFor, addCartProduct, changeCartQuantity,
   checkoutError, createDemoOrder, decreaseStock
-} from '../src/storeLogic.js';
-import { PRODUCTS } from '../src/data.js';
+} from './storeLogic.js';
+import { PRODUCTS } from './data.js';
 
 const inventory = Object.fromEntries(PRODUCTS.map(product => [product.id, product.stock]));
 const demoCustomer = { name: 'Alex Demo', email: 'alex@example.test', address: '123 Demo Street, Wah' };

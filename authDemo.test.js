@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { DEMO_ADMIN_USERNAME, DEMO_ADMIN_PASSWORD, DEMO_SESSION_KEY, pageFromPath, validDemoCredentials, readDemoSession, saveDemoSession } from '../src/authDemo.js';
+import { DEMO_ADMIN_USERNAME, DEMO_ADMIN_PASSWORD, DEMO_SESSION_KEY, pageFromPath, validDemoCredentials, readDemoSession, saveDemoSession } from './authDemo.js';
 
 function memoryStorage() {
   const memory = new Map();
