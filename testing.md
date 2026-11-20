@@ -57,3 +57,29 @@ The new admin login is UI-only: its public demo password is shipped in the front
 - [ ] `npm run build`: not verified on this Vercel package without npm dependencies.
 - [ ] Vercel import and hosted deployment: not performed, pending user's GitHub/Vercel accounts.
 - [ ] Public browser testing of `/` and direct `/admin`: pending after hosted deployment.
+## Final Verification — 20 November 2026
+
+### Automated Testing
+- Command: npm test
+- Total tests: 16
+- Passed: 16
+- Failed: 0
+- Result: Successful
+
+### Production Build
+- Command: npm run build
+- Framework: React + Vite
+- Result: Build completed successfully
+
+### Vercel Deployment
+- Status: Ready
+- GitHub branch: main
+- Latest deployment successful
+
+Live Website:
+https://nexus-commerce-capstone-eta.vercel.app
+
+### Limitations
+- Checkout is simulated.
+- Merchant login uses demo-only authentication.
+- Order data is stored in browser localStorage.
