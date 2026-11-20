@@ -38,3 +38,28 @@ The existing React/Vite NEXUS-COMMERCE v0.2 prototype exposed the merchant CRM t
 ## Limitations
 
 The frontend credentials are visible to anyone inspecting the shipped JavaScript. LocalStorage data is accessible regardless of the displayed login state. This is appropriate only as a fictional prototype UX demonstration, **not real access control**. A proper implementation needs server-side authorization and a shared database.
+## Later Improvements and Live Verification
+
+### Login Navigation Improvement
+
+The user requested a way to access merchant login
+directly from the customer storefront.
+
+- Added a Login button to the storefront navigation.
+- Connected the button to the existing /admin route.
+- Corrected a duplicate Login button.
+- Kept the CRM accessible through the merchant sign-in screen.
+
+### Live Testing Results
+
+- Merchant login page opened on Vercel.
+- Merchant login worked successfully.
+- Test checkout orders appeared in the CRM.
+- Order status updates remained saved after refresh.
+- Storefront and CRM navigation were tested.
+
+### Remaining Limitation
+
+Merchant authentication is client-side and intended
+only for demonstration. It does not provide secure
+access control for real customer data.

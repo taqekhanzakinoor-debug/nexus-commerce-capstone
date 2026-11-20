@@ -31,3 +31,32 @@ This short message followed the user's confirmation that the merchant-login issu
 - `npm install`, `npm run build`, actual browser tests, screenshot capture, GitHub Actions execution, and a verified deployment URL must be performed on a machine with network access.
 
 No GitHub repository or deployment was created by this step.
+## Later Deployment Results — November 18–20, 2026
+
+### GitHub
+- Project uploaded to GitHub.
+- Repository created successfully.
+- Product images fixed and uploaded.
+- Project screenshots added.
+
+### Vercel Deployment
+- Website successfully deployed on Vercel.
+- Initial build issues were resolved.
+- Product images displayed correctly.
+- Storefront and merchant login were accessible.
+
+### Live Verification
+- Shopping cart worked successfully.
+- Simulated checkout created a test order.
+- Order appeared in Merchant CRM.
+- Order status remained saved after refresh.
+
+### Live Website
+https://nexus-commerce-capstone-eta.vercel.app
+
+### GitHub Repository
+https://github.com/taqekhanzakinoor-debug/nexus-commerce-capstone
+
+Note: These results were obtained after the
+initial deployment preparation documented above.
+The merchant login remains demo-only.

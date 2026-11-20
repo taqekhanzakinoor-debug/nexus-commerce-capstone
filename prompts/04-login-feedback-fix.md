@@ -24,3 +24,14 @@ The user supplied a screenshot of the `/admin` login view displaying a red incor
 
 ## Limitations
 This is UI/demo logic, not real authentication. All frontend credentials remain visible in shipped source and stored records are not private.
+## Later Live Verification — November 18, 2026
+
+- Merchant login successfully tested in the browser.
+- Correct demo credentials accepted.
+- Merchant CRM dashboard opened successfully.
+- Test orders appeared in the CRM.
+- Order status changes remained saved after refresh.
+- Login was verified on the live Vercel website.
+
+Note: Authentication remains client-side and
+is intended for demonstration purposes only.

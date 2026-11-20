@@ -33,3 +33,34 @@ The project previously offered Netlify as the primary suggested host, but the us
 ## Remaining limitation
 
 Client-side login is demonstrative only and browser storage does not sync orders across devices; this remains unsuitable for real customer data.
+## Later Live Deployment Verification
+
+### Deployment Platform
+Vercel
+
+### Live Website
+https://nexus-commerce-capstone-eta.vercel.app
+
+### GitHub Repository
+https://github.com/taqekhanzakinoor-debug/nexus-commerce-capstone
+
+### Deployment Issues Resolved
+- Corrected the React entry-file path.
+- Fixed missing product images.
+- Uploaded changes using VS Code and GitHub.
+- Successfully deployed the updated website.
+
+### Live Testing Results
+- Storefront loaded successfully.
+- All eight product images displayed correctly.
+- Shopping cart worked.
+- Simulated checkout created a test order.
+- Order appeared in the Merchant CRM.
+- Order status remained saved after refresh.
+- Merchant login worked on the live website.
+
+### Limitations
+- Checkout is simulated; no real payments.
+- Merchant authentication is demo-only.
+- Orders are stored in browser localStorage,
+  not a shared database.

@@ -37,5 +37,33 @@ This is a record of a real follow-up turn. No detailed prompt beyond the user's 
 - Browser end-to-end test, npm package installation, and public deployment remain pending; do **not** mark those completed until you actually run them.
 
 ## Remaining limits
+The CRM uses browser localStorage to save demo orders.
+It does not use a shared database.
+
+A merchant login has been added, but it is only
+a demonstration login, not secure server-side
+authentication.
+
+The website supports simulated checkout only.
+No real payments are processed.
 
 Browser-only localStorage is not a multi-user database; CRM is for fictional demo records only. It has no authentication or real payments.
+## Later Verification — November 18, 2026
+
+The following features were manually tested on the live Vercel website:
+
+- Website successfully deployed on Vercel.
+- Product images displayed correctly.
+- Shopping cart successfully added products.
+- Simulated checkout created a test order.
+- Test order appeared in Merchant CRM.
+- Order status was successfully updated.
+- Updated order status remained saved after refreshing.
+- Merchant login page opened successfully.
+
+Live website:
+https://nexus-commerce-capstone-eta.vercel.app
+
+Note: These tests were completed after the initial
+verification recorded above. The merchant login is
+demo-only, and order data uses browser localStorage.
