@@ -26,6 +26,29 @@ https://nexus-commerce-capstone-eta.vercel.app
 - Customer and inquiry records
 - Order status updates
 - Summary statistics
+## Merchant CRM Access
+
+The project includes a merchant dashboard
+for managing customer inquiries and orders.
+
+### Admin Login
+
+Login URL:
+https://nexus-commerce-capstone-eta.vercel.app/admin
+
+**Username:** merchant
+
+**Password:** NexusDemo2026!
+
+### Admin Features
+- View customer orders
+- Update order status
+- Manage customer inquiries
+- View dashboard statistics
+
+**Note:** These are fictional demonstration credentials.
+Authentication is client-side and does not secure
+real customer data.
 
 ## Technologies Used
 
