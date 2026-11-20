@@ -17,7 +17,7 @@ This document describes **context that informed the generated code**, rather tha
 
 ## Concrete context dataset
 
-We created *fictional* records in `src/data.js` because no real product data was supplied:
+We created *fictional* records in `data.js` because no real product data was supplied:
 
 - 8 demo products across Home / Lifestyle / Tech / Stationery.
 - 2 fictional seeded orders and 3 fictional seeded inquiries.
@@ -33,9 +33,58 @@ We created *fictional* records in `src/data.js` because no real product data was
 
 ## Verification mapping
 
-- `src/data.js` → product/seed schema; manually inspect or run static checks.
-- `src/App.jsx` → search/cart/checkout/CRM; **must be tested in a real browser**.
-- `src/usePersistentState.js` → storage writes; refresh test required.
-- `docs/testing.md` → record truthful outcomes.
+- `data.js` → product/seed schema; manually inspect or run static checks.
+- `App.jsx` → search/cart/checkout/CRM; **must be tested in a real browser**.
+- `usePersistentState.js` → storage writes; refresh test required.
+- `testing.md` → record truthful outcomes.
 
 **Next context iteration:** Replace fictional products with a product list the project owner chooses, then test each displayed product against the actual dataset.
+## Final Context Verification — 20 November 2026
+
+### Product Dataset Verification
+
+The application uses eight fictional products
+defined in data.js.
+
+Manual verification confirmed:
+- Product names and prices displayed correctly.
+- Product images loaded successfully.
+- Product availability was displayed.
+- Shopping cart functionality worked.
+
+### Storefront and CRM Verification
+
+The following workflows were manually tested:
+- Simulated checkout created an order.
+- The new order appeared in Merchant CRM.
+- Order status changes remained saved after refresh.
+- Merchant login worked in an InPrivate browser.
+- Fictional customer and inquiry records were visible.
+
+### Automated Verification
+
+Command: npm test
+Tests passed: 16
+Tests failed: 0
+
+Production build:
+npm run build — Successful
+
+### Deployment Verification
+
+Platform: Vercel
+Status: Ready
+
+Website:
+https://nexus-commerce-capstone-eta.vercel.app
+
+### Context Engineering Limitations
+
+- Product and customer records are fictional.
+- Browser localStorage is used for persistence.
+- Data is not synchronized between browsers.
+- Merchant authentication is demonstration-only.
+- No real payments are processed.
+
+These findings document the implemented context
+and the verification completed after deployment.
