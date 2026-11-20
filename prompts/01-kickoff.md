@@ -15,10 +15,10 @@ Create a functional student-capstone storefront with cart and simulated checkout
 
 ## Implementation mapping (initial generated files)
 
-- `src/App.jsx` — storefront, cart, demo checkout, inquiries, CRM lists/status controls.
-- `src/data.js` — fictional sample products, orders and inquiries.
-- `src/usePersistentState.js` — localStorage state persistence.
-- `src/styles.css` — desktop/mobile styling.
+- `App.jsx` — storefront, cart, demo checkout, inquiries, CRM lists/status controls.
+- `data.js` — fictional sample products, orders and inquiries.
+- `usePersistentState.js` — localStorage state persistence.
+- `styles.css` — desktop/mobile styling.
 - `public/images/` — original SVG illustrations.
 - `README.md`, `docs/`, `prompts/` — setup and documentation.
 
